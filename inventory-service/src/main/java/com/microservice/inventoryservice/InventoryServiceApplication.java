@@ -3,12 +3,14 @@ package com.microservice.inventoryservice;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import com.microservice.inventoryservice.model.Inventory;
 import com.microservice.inventoryservice.repo.InventoryRepository;
 
 @SpringBootApplication
+@EnableEurekaClient
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
